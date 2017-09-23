@@ -6,12 +6,16 @@ var Schema = mongoose.Schema;
 // Create rrack schema
 var TrackSchema = new Schema({
   // title is a required string
-  title: {
+  id: {
     type: String,
     required: true
   },
   // link is a required string
-  link: {
+  imageUrl: {
+    type: String,
+    required: true
+  },
+  name: {
     type: String,
     required: true
   },
@@ -22,8 +26,5 @@ var TrackSchema = new Schema({
   }
 });
 
-// Create the Track model with the TrackSchema
-var Track = mongoose.model('Track', TrackSchema);
-
-// Export the model
-module.exports = Track;
+// Create the Track model with the TrackSchema and export
+module.exports = mongoose.model('Track', TrackSchema);
