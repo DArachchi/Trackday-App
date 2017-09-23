@@ -1,7 +1,7 @@
 {
   "name": "trackday-app",
   "version": "1.0.0",
-  "description": "A web application for storing and displaying information about race tracks and track days.",
+  "description": "A web application for storing and displaying information about race tracks and track days. Built using MEAN stack.",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.18.2",
