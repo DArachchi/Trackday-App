@@ -1,0 +1,26 @@
+{
+  "name": "trackday-app",
+  "version": "1.0.0",
+  "description": "A web application for storing and displaying information about race tracks and track days.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.15.4",
+    "method-override": "^2.3.9",
+    "mongoose": "^4.11.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DArachchi/Trackday-App.git"
+  },
+  "author": "Dino Arachchi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DArachchi/Trackday-App/issues"
+  },
+  "homepage": "https://github.com/DArachchi/Trackday-App#readme"
+}
