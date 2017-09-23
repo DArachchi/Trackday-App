@@ -13,19 +13,27 @@ module.exports = function(app) {
             }
         })
     });
-
+    // This will grab a track by it's ObjectId
+    app.get("/api/tracks/:id", function(req, res) {
+        Track.findOne({id: req.params.id}, function(error, doc) {
+            if (error) {
+                res.send(error);
+            }
+            else {
+                res.send(doc);
+            }
+        });
+    });
     // POST route to add a new track
     app.post("/api/tracks", function(req, res) {
         var entry = new Track(req.body);
 
         entry.save(function(err, doc) {
-            // Log any errors
             if (err) {
-                console.log(err);
+                res.send(error);
             }
-            // Or log the doc
             else {
-                console.log(doc);
+                res.send(doc);
             }
         });
     });

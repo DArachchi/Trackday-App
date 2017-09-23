@@ -4,7 +4,8 @@
 angular.module('trackdayApp', [
   'ngRoute',
   'appRoutes',
-  'myApp.view1',
-  'myApp.view2',
-  'trackService'
+  'track-list',
+  'track-detail',
+  'trackService',
+  'trackService2'
 ]);
