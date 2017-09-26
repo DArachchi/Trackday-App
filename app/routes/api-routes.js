@@ -13,7 +13,7 @@ module.exports = function(app) {
             }
         })
     });
-    // This will grab a track by it's ObjectId
+    // GET route to pull a track by it's ObjectId
     app.get("/api/tracks/:id", function(req, res) {
         Track.findOne({id: req.params.id}, function(error, doc) {
             if (error) {
