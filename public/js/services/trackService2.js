@@ -4,7 +4,7 @@ angular.
   module('trackService2', ['ngResource']).
     factory('Track', ['$resource',
         function($resource) {
-        return $resource('/api/tracks/:trackId', {}, {
+        return $resource('/tracks/:trackId.json', {}, {
             query: {
                 method: 'GET',
                 params: {trackId: 'tracks'},
