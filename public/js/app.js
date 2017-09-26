@@ -6,6 +6,6 @@ angular.module('trackdayApp', [
   'appRoutes',
   'track-list',
   'track-detail',
-  'trackService',
-  'trackService2'
+  'trackListService',
+  'trackDetailService'
 ]);

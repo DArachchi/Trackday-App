@@ -1,7 +1,7 @@
 'use strict';
 
 angular.
-  module('trackService', ['ngResource']).
+  module('trackListService', ['ngResource']).
     factory('trackFactory', ['$resource',
       function($resource) {
         return $resource('/api/tracks', {}, {
