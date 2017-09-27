@@ -19,10 +19,10 @@ var TrackSchema = new Schema({
     type: String,
     required: true
   },
-  // This only saves one comment's ObjectId, ref refers to the comment model
-  comment: {
+  // This only saves one lapTime's ObjectId, ref refers to the lapTime model
+  lapTime: {
     type: Schema.Types.ObjectId,
-    ref: 'comment'
+    ref: 'lapTime'
   }
 });
 

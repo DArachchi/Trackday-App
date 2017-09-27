@@ -4,9 +4,9 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
-// Requiring our track and comment models
+// Requiring our track and lapTime models
 var Track = require('./app/models/track.js');
-var Comment = require('./app/models/comment.js');
+var LapTime = require('./app/models/lapTime.js');
 
 // Set mongoose to leverage built in JavaScript ES6 Promises
 mongoose.Promise = Promise;
